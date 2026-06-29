@@ -1,0 +1,129 @@
+{
+  "nodes": [
+    {
+      "id": "L1", "realm": "life", "label": "Characteristics & Classification",
+      "description": "Characteristics of living organisms and classification systems",
+      "examFocus": "AO1 · define, classify", "ao": ["AO1"], "prerequisites": [], "nexusLinks": []
+    },
+    {
+      "id": "L2", "realm": "life", "label": "Cells & Organisation",
+      "description": "Animal/plant/specialised cells, organelles, magnification calculations",
+      "examFocus": "AO1/AO2 · calc", "ao": ["AO1","AO2"], "prerequisites": ["L1"], "nexusLinks": []
+    },
+    {
+      "id": "L3", "realm": "life", "label": "Movement in & out of Cells",
+      "description": "Diffusion, osmosis, active transport",
+      "examFocus": "AO2 · water potential", "ao": ["AO2"], "prerequisites": ["L2"], "nexusLinks": ["N1","N3"]
+    },
+    {
+      "id": "L4", "realm": "life", "label": "Biological Molecules & Food Tests",
+      "description": "Benedict's, biuret, iodine, ethanol food tests",
+      "examFocus": "AO3 · practical", "ao": ["AO3"], "prerequisites": ["L2"], "nexusLinks": []
+    },
+    {
+      "id": "L5", "realm": "life", "label": "Enzymes",
+      "description": "Active site, effect of temperature & pH, denaturation",
+      "examFocus": "AO2 · graphs", "ao": ["AO2"], "prerequisites": ["L4"], "nexusLinks": []
+    },
+    {
+      "id": "L6", "realm": "life", "label": "Plant Nutrition",
+      "description": "Photosynthesis, leaf adaptation, limiting factors",
+      "examFocus": "AO2 · explain", "ao": ["AO2"], "prerequisites": ["L3","L5"], "nexusLinks": ["N2"]
+    },
+    {
+      "id": "L7", "realm": "life", "label": "Human Nutrition",
+      "description": "Balanced diet, digestion, absorption (villi)",
+      "examFocus": "AO1 · describe", "ao": ["AO1"], "prerequisites": ["L4","L5"], "nexusLinks": []
+    },
+    {
+      "id": "L8", "realm": "life", "label": "Transport in Plants",
+      "description": "Xylem/phloem, transpiration and its factors",
+      "examFocus": "AO2 · data", "ao": ["AO2"], "prerequisites": ["L3","L6"], "nexusLinks": []
+    },
+    {
+      "id": "L9", "realm": "life", "label": "Transport in Animals",
+      "description": "Heart, double circulation, blood components",
+      "examFocus": "AO1 · label/describe", "ao": ["AO1"], "prerequisites": ["L3","L7"], "nexusLinks": []
+    },
+    {
+      "id": "L10", "realm": "life", "label": "Diseases & Immunity",
+      "description": "Pathogens, defences, antibodies, vaccination",
+      "examFocus": "AO1 · explain", "ao": ["AO1"], "prerequisites": ["L9"], "nexusLinks": []
+    },
+    {
+      "id": "M1", "realm": "matter", "label": "Kinetic Particle Theory",
+      "description": "States of matter, changes of state, diffusion — kinetic model",
+      "examFocus": "AO2 · explain", "ao": ["AO2"], "prerequisites": [], "nexusLinks": ["N1"]
+    },
+    {
+      "id": "M2", "realm": "matter", "label": "Atoms, Elements & Compounds",
+      "description": "Atomic structure, protons/neutrons/electrons, isotopes",
+      "examFocus": "AO1 · structure", "ao": ["AO1"], "prerequisites": ["M1"], "nexusLinks": []
+    },
+    {
+      "id": "M3", "realm": "matter", "label": "The Periodic Table",
+      "description": "Groups, periods, trends (I, VII, 0), metals/non-metals",
+      "examFocus": "AO2 · predict", "ao": ["AO2"], "prerequisites": ["M2"], "nexusLinks": []
+    },
+    {
+      "id": "M4", "realm": "matter", "label": "Chemical Bonding",
+      "description": "Ionic & covalent bonding (dot-and-cross diagrams), properties",
+      "examFocus": "AO2 · explain", "ao": ["AO2"], "prerequisites": ["M2","M3"], "nexusLinks": []
+    },
+    {
+      "id": "M5", "realm": "matter", "label": "Stoichiometry",
+      "description": "Formulae, balancing equations, relative mass, mole (intro)",
+      "examFocus": "AO2 · calc", "ao": ["AO2"], "prerequisites": ["M2","M4"], "nexusLinks": ["N2"]
+    },
+    {
+      "id": "M6", "realm": "matter", "label": "Acids, Bases & Salts",
+      "description": "pH, indicators, reactions of acids, salt preparation",
+      "examFocus": "AO3 · practical", "ao": ["AO3"], "prerequisites": ["M5"], "nexusLinks": ["N3"]
+    },
+    {
+      "id": "F1", "realm": "forces", "label": "Motion",
+      "description": "Speed, velocity, acceleration, distance-time & speed-time graphs",
+      "examFocus": "AO2 · calc/graph", "ao": ["AO2"], "prerequisites": [], "nexusLinks": []
+    },
+    {
+      "id": "F2", "realm": "forces", "label": "Forces",
+      "description": "Newton's laws, mass vs weight, friction, resultant, moments, pressure",
+      "examFocus": "AO2 · calc", "ao": ["AO2"], "prerequisites": ["F1"], "nexusLinks": ["N3"]
+    },
+    {
+      "id": "F3", "realm": "forces", "label": "Energy",
+      "description": "Energy stores & transfers, work, power, efficiency, KE & GPE",
+      "examFocus": "AO2 · calc", "ao": ["AO2"], "prerequisites": ["F1","F2"], "nexusLinks": ["N2"]
+    },
+    {
+      "id": "F4", "realm": "forces", "label": "Thermal Physics",
+      "description": "Temperature, kinetic theory, specific heat, conduction/convection/radiation",
+      "examFocus": "AO2 · explain", "ao": ["AO2"], "prerequisites": ["F2","F3"], "nexusLinks": ["N1"]
+    },
+    {
+      "id": "F5", "realm": "forces", "label": "Waves",
+      "description": "Wave properties, v = fλ, sound, light, reflection/refraction, EM spectrum",
+      "examFocus": "AO2 · calc", "ao": ["AO2"], "prerequisites": ["F3","F4"], "nexusLinks": []
+    }
+  ],
+  "nexuses": [
+    {
+      "id": "N1", "title": "PARTICLES",
+      "description": "One particle model, three lenses: diffusion in cells · kinetic particle theory · Brownian motion & gas pressure",
+      "nodes": ["L3","M1","F4"],
+      "reward": { "xp": 200, "credits": 50 }
+    },
+    {
+      "id": "N2", "title": "ENERGY",
+      "description": "Energy is conserved everywhere: respiration & photosynthesis · exo/endothermic · energy stores & transfers",
+      "nodes": ["L6","M5","F3"],
+      "reward": { "xp": 200, "credits": 50 }
+    },
+    {
+      "id": "N3", "title": "TRANSPORT",
+      "description": "Gradients & pressure drive everything: osmosis · solutions & concentration · pressure",
+      "nodes": ["L3","M6","F2"],
+      "reward": { "xp": 200, "credits": 50 }
+    }
+  ]
+}

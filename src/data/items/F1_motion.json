@@ -1,0 +1,299 @@
+[
+  {
+    "id": "phy_recall_f1_01",
+    "mode": "recall",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO1",
+    "command": "define",
+    "marks": 1,
+    "front": "Define speed.",
+    "back": "the distance travelled per unit time",
+    "keywords": ["distance", "unit time"],
+    "srs": { "interval": 1, "ease": 2.5, "due": null },
+    "reward": { "xp": 10, "credits": 2 }
+  },
+  {
+    "id": "phy_recall_f1_02",
+    "mode": "recall",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO1",
+    "command": "state",
+    "marks": 1,
+    "front": "State the equation linking speed, distance and time.",
+    "back": "speed = distance / time   (v = d / t)",
+    "keywords": ["speed", "distance", "time"],
+    "srs": { "interval": 1, "ease": 2.5, "due": null },
+    "reward": { "xp": 10, "credits": 2 }
+  },
+  {
+    "id": "phy_recall_f1_03",
+    "mode": "recall",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO1",
+    "command": "define",
+    "marks": 2,
+    "front": "Define acceleration.",
+    "back": "the rate of change of velocity (change in velocity per unit time)",
+    "keywords": ["change", "velocity", "time"],
+    "srs": { "interval": 1, "ease": 2.5, "due": null },
+    "reward": { "xp": 10, "credits": 2 }
+  },
+  {
+    "id": "phy_recall_f1_04",
+    "mode": "recall",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO1",
+    "command": "state",
+    "marks": 1,
+    "front": "State the difference between speed and velocity.",
+    "back": "velocity includes direction; speed does not",
+    "keywords": ["direction", "speed"],
+    "srs": { "interval": 1, "ease": 2.5, "due": null },
+    "reward": { "xp": 10, "credits": 2 }
+  },
+  {
+    "id": "phy_learn_f1_01",
+    "mode": "learn",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO2",
+    "command": "describe",
+    "marks": 0,
+    "stem": "Watch how speed changes as you adjust distance and time.",
+    "concept": "v = d / t",
+    "predict": "If a car travels 200 m in 10 s, what is its speed? Type your guess before revealing the answer.",
+    "reveal": "v = 200 / 10 = 20 m/s",
+    "explanation": "Speed is always distance ÷ time. The unit is m/s (metres per second). Every calculation needs: the equation, the substitution, and the answer with unit — that's 3 marks in the exam.",
+    "reward": { "xp": 15, "credits": 3 }
+  },
+  {
+    "id": "phy_learn_f1_02",
+    "mode": "learn",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO2",
+    "command": "describe",
+    "marks": 0,
+    "stem": "Explore what a distance-time graph tells you.",
+    "concept": "gradient of distance-time graph = speed",
+    "predict": "On a distance-time graph, a steeper line means...?",
+    "reveal": "A steeper gradient = greater speed",
+    "explanation": "The gradient (slope) of a distance-time graph equals speed. Horizontal line = stationary. Curved line = changing speed (acceleration). This is the key to reading any motion graph.",
+    "reward": { "xp": 15, "credits": 3 }
+  },
+  {
+    "id": "phy_learn_f1_03",
+    "mode": "learn",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO2",
+    "command": "calculate",
+    "marks": 0,
+    "stem": "Discover the acceleration equation.",
+    "concept": "a = (v - u) / t",
+    "predict": "A bike speeds up from 0 to 6 m/s in 3 s. What formula would give the acceleration?",
+    "reveal": "a = (v - u) / t = (6 - 0) / 3 = 2 m/s²",
+    "explanation": "Acceleration = (final velocity − initial velocity) ÷ time. The unit is m/s². A negative value means deceleration. On a speed-time graph, the gradient gives you acceleration.",
+    "reward": { "xp": 15, "credits": 3 }
+  },
+  {
+    "id": "phy_apply_f1_01",
+    "mode": "apply",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO2",
+    "command": "describe",
+    "marks": 3,
+    "stem": "The graph shows the distance-time graph for a cyclist. Describe the motion in each section.",
+    "dataset": {
+      "xLabel": "Time",
+      "yLabel": "Distance",
+      "xUnit": "s",
+      "yUnit": "m",
+      "points": [
+        {"x": 0, "y": 0},
+        {"x": 5, "y": 50},
+        {"x": 10, "y": 50},
+        {"x": 15, "y": 80}
+      ]
+    },
+    "options": [
+      "Accelerating throughout",
+      "Moving at constant speed, then stationary, then slower constant speed",
+      "Moving fast, stopping, then moving slowly"
+    ],
+    "correct_option": 1,
+    "mark_scheme": ["constant speed (0-5s)", "stationary / not moving (5-10s)", "constant speed / slower speed (10-15s)"],
+    "keywords": ["constant", "stationary", "speed"],
+    "reward": { "xp": 20, "credits": 4 }
+  },
+  {
+    "id": "phy_apply_f1_02",
+    "mode": "apply",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO2",
+    "command": "describe",
+    "marks": 2,
+    "stem": "The table shows the speed of a car at different times. Describe the motion.",
+    "dataset": {
+      "xLabel": "Time",
+      "yLabel": "Speed",
+      "xUnit": "s",
+      "yUnit": "m/s",
+      "points": [
+        {"x": 0, "y": 0},
+        {"x": 4, "y": 12},
+        {"x": 8, "y": 12},
+        {"x": 12, "y": 0}
+      ]
+    },
+    "options": [
+      "Constant speed throughout",
+      "Accelerates, then travels at constant speed, then decelerates",
+      "Decelerates, constant, then accelerates"
+    ],
+    "correct_option": 1,
+    "mark_scheme": ["accelerates from 0 to 12 m/s", "constant speed at 12 m/s", "decelerates to rest"],
+    "keywords": ["accelerates", "constant", "decelerates"],
+    "reward": { "xp": 20, "credits": 4 }
+  },
+  {
+    "id": "phy_apply_f1_03",
+    "mode": "apply",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO2",
+    "command": "calculate",
+    "marks": 2,
+    "stem": "From the speed-time graph, calculate the distance travelled in the first 4 seconds.",
+    "dataset": {
+      "xLabel": "Time",
+      "yLabel": "Speed",
+      "xUnit": "s",
+      "yUnit": "m/s",
+      "points": [
+        {"x": 0, "y": 0},
+        {"x": 4, "y": 12},
+        {"x": 8, "y": 12}
+      ]
+    },
+    "options": [
+      "12 m",
+      "24 m",
+      "48 m"
+    ],
+    "correct_option": 1,
+    "mark_scheme": ["area under graph (triangle)", "½ × 4 × 12 = 24 m"],
+    "keywords": ["area", "triangle", "24"],
+    "reward": { "xp": 20, "credits": 4 }
+  },
+  {
+    "id": "phy_calc_f1_01",
+    "mode": "calculate",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO2",
+    "command": "calculate",
+    "marks": 3,
+    "stem": "A runner covers 100 m in 20 s. Calculate the speed.",
+    "given": { "d": "100 m", "t": "20 s" },
+    "equation": "v = d / t",
+    "answer": { "value": 5, "unit": "m/s" },
+    "mark_scheme": ["correct equation", "correct substitution", "answer with correct unit"],
+    "frontier": "Usain Bolt's top speed ≈ 12 m/s. This runner is doing 5 m/s — compare the two.",
+    "reward": { "xp": 30, "credits": 6 }
+  },
+  {
+    "id": "phy_calc_f1_02",
+    "mode": "calculate",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO2",
+    "command": "calculate",
+    "marks": 3,
+    "stem": "A car accelerates from rest to 24 m/s in 8 s. Calculate the acceleration.",
+    "given": { "u": "0 m/s", "v": "24 m/s", "t": "8 s" },
+    "equation": "a = (v - u) / t",
+    "answer": { "value": 3, "unit": "m/s²" },
+    "mark_scheme": ["correct equation", "correct substitution", "answer with correct unit"],
+    "frontier": "A sports car can reach 0–60 mph (≈27 m/s) in 3.5 s — that's ≈7.7 m/s². How does our car compare?",
+    "reward": { "xp": 30, "credits": 6 }
+  },
+  {
+    "id": "phy_calc_f1_03",
+    "mode": "calculate",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO2",
+    "command": "calculate",
+    "marks": 3,
+    "stem": "A train travels at 50 m/s for 2 minutes. Calculate the distance travelled.",
+    "given": { "v": "50 m/s", "t": "120 s" },
+    "equation": "d = v × t",
+    "answer": { "value": 6000, "unit": "m" },
+    "mark_scheme": ["correct equation", "correct substitution (t in seconds)", "answer with correct unit"],
+    "frontier": "6 km in 2 minutes — that's the length of about 60 football pitches end-to-end.",
+    "reward": { "xp": 30, "credits": 6 }
+  },
+  {
+    "id": "phy_lab_f1_01",
+    "mode": "lab",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO3",
+    "command": "identify",
+    "marks": 3,
+    "stem": "An experiment measures how the speed of a trolley changes when different masses are added.",
+    "scenario": "A trolley is released down a ramp with different hanging masses. The time to travel 1 m is recorded each time.",
+    "variables": {
+      "independent": "mass of hanging weight (g)",
+      "dependent": "speed of trolley at bottom (m/s)",
+      "control": ["length of ramp (1 m)", "starting position of trolley", "surface of ramp"]
+    },
+    "question": "Identify the independent variable, dependent variable, and one control variable in this experiment.",
+    "mark_scheme": ["independent: mass of hanging weight", "dependent: speed (or time) of trolley", "one valid control variable (e.g. ramp length, starting position)"],
+    "reward": { "xp": 25, "credits": 5 }
+  },
+  {
+    "id": "phy_crack_f1_01",
+    "mode": "crack",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO2",
+    "command": "calculate",
+    "marks": 5,
+    "stem": "A car brakes from 30 m/s to rest in 6 s.\n(a) Calculate the deceleration. [3]\n(b) Calculate the distance travelled during braking. [2]",
+    "mark_scheme": [
+      "a = (v - u) / t",
+      "a = (0 - 30) / 6",
+      "a = -5 m/s² (deceleration = 5 m/s²)",
+      "distance = average speed × time OR area under graph",
+      "d = (30+0)/2 × 6 = 90 m"
+    ],
+    "max_keywords": 5,
+    "reward": { "xp": 50, "credits": 10 }
+  },
+  {
+    "id": "phy_crack_f1_02",
+    "mode": "crack",
+    "realm": "forces",
+    "node": "F1",
+    "ao": "AO2",
+    "command": "explain",
+    "marks": 4,
+    "stem": "A distance-time graph has a curved, increasingly steep line. Explain what this tells you about the motion of the object.",
+    "mark_scheme": [
+      "gradient of distance-time graph = speed",
+      "gradient is increasing",
+      "therefore speed is increasing",
+      "object is accelerating"
+    ],
+    "max_keywords": 4,
+    "reward": { "xp": 50, "credits": 10 }
+  }
+]
